@@ -1,0 +1,35 @@
+@font-face {
+  font-family: LatoRegular;
+  src: url(fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: LatoBold;
+  src: url(fonts/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: LatoThin;
+  src: url(fonts/Lato-Thin.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: LatoRegular;
+  color: white;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #181820;
+  padding: 50px;
+}
+
+.bodyComp {
+  width: 100px;
+  height: 100;
+  background-color: #181820;
+}
+
+/* #181820*/
