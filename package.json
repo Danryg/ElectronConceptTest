@@ -1,0 +1,22 @@
+{
+  "name": "electronconcepttest",
+  "version": "1.0.0",
+  "description": "This is a concept test",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danryg/ElectronConceptTest.git"
+  },
+  "author": "Daniel Rygaard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danryg/ElectronConceptTest/issues"
+  },
+  "homepage": "https://github.com/Danryg/ElectronConceptTest#readme",
+  "devDependencies": {
+    "electron": "^23.1.4"
+  }
+}
