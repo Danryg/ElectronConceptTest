@@ -11,10 +11,25 @@
   </head>
   <body>
     <h1>Whisper AI Test</h1>
-    <audio id="audioElement" controls></audio>
+    <audio id="audioElement"></audio>
     <button id="audioSelectBtn" class="button">Input source</button>
     <button id="startRecBtn" class="button">Start</button>
     <button id="stopRecBtn" class="button">Stop</button>
+    <button id="transcribeBtn" class="button">Transcribe</button>
+    <div id="audioList" class="recordList">
+      <!-- <div class="recordListItem" >
+        <p class="title">Record 1</p>
+        <audio class="audioSource" controls>Play</audio>
+        <button class="button">Transcribe</button>
+      </div>
+      <div class="recordListItem">
+        <p class="title">Record 2</p>
+        <audio class="audioSource" controls>Play</audio>
+        <button class="button">Transcribe</button>
+      </div> -->
+    </div>
+    <p class="transcriptText" id="transText">Lorem ipsum dolar sit amet</p>
+
     <script src="renderer.js"></script>
   </body>
 </html>

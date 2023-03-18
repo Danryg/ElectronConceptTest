@@ -1,5 +1,13 @@
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, ipcMain } = require("electron");
 const path = require("path");
+
+const dotenv = require("dotenv").config();
+const axios = require("axios");
+const fs = require("fs");
+const FormData = require("form-data");
+
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+
 require("@electron/remote/main").initialize();
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require("electron-squirrel-startup")) {
@@ -53,3 +61,10 @@ app.on("activate", () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
+
+ipcMain.handle("read-user-data", async (event, fileName) => {
+  const { app } = require("electron");
+  let path = app.getPath("userData");
+  path = path + "\\" + fileName;
+  return path;
+});

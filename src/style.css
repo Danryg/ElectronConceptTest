@@ -25,4 +25,50 @@ body {
   padding: 2rem;
 }
 
+.recordList {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  padding: 0;
+  height: 50px;
+}
+
+.recordListItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 10px;
+  border-bottom: 1px solid #181820;
+}
+
+.recordListItem .title {
+  font-family: LatoBold;
+  font-size: 1.5rem;
+  padding: 0;
+  width: 100px;
+  margin: 0;
+}
+
+.transcriptText {
+  font-family: LatoRegular;
+  font-size: 1rem;
+  padding: 0;
+  width: 600px;
+  margin: 0;
+  position: relative;
+  top: 300px;
+}
+
+.transcBtn {
+  font-family: LatoRegular;
+  font-size: 1rem;
+  padding: 0;
+  width: 100px;
+  margin: 0;
+}
+
 /* #181820*/
